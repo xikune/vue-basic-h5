@@ -1,7 +1,13 @@
 [*.{js,jsx,ts,tsx,vue}]
+charset = utf-8
+# 缩进风格，可选"space"、"tab"
 indent_style = space
+# 缩进的空格数
 indent_size = 2
+# 结尾换行符，可选"lf"、"cr"、"crlf"
 end_of_line = lf
+# 删除一行中的前后空格
 trim_trailing_whitespace = true
+# 在文件结尾插入新行
 insert_final_newline = true
 max_line_length = 100
