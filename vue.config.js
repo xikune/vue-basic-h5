@@ -62,9 +62,7 @@ module.exports = {
       .set('@', resolve('src'))
       .set('views', resolve('src/views'))
       .set('assets', resolve('src/assets'))
-      .set('components', resolve('src/components'))
       .set('lib', resolve('src/lib'))
-      .set('plugins', resolve('src/plugins'))
       .set('config', resolve('src/config'));
     config.module
       .rule('mark')

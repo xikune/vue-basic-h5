@@ -1,15 +1,15 @@
 // const loaderUtils = require('loader-utils');
 const fs = require('fs');
 
-function writeDocument(doc) {
-  fs.writeFile('./document.js', doc, {
-    'flag': 'a'
-  }, function (err) {
-    if (err) {
-      throw err;
-    }
-  });
-}
+// function writeDocument(doc) {
+//   fs.writeFile('./document.js', doc, {
+//     'flag': 'a'
+//   }, function (err) {
+//     if (err) {
+//       throw err;
+//     }
+//   });
+// }
 
 function getNormalTime() {
   let curTime = new Date(Date.now() + 8 * 3600 * 1000).toISOString().replace(/T/g, ' ').split(
@@ -29,7 +29,7 @@ function addInfo(str) {
 }
 module.exports = function (source) {
   // const options = loaderUtils.getOptions(this)
-  writeDocument(source)
+  // writeDocument(source)
 
   return addInfo(source)
 
