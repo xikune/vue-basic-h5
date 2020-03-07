@@ -60,10 +60,12 @@ module.exports = {
     // 添加别名
     config.resolve.alias
       .set('@', resolve('src'))
+      .set('views', resolve('src/views'))
       .set('assets', resolve('src/assets'))
       .set('components', resolve('src/components'))
       .set('lib', resolve('src/lib'))
-      .set('directives', resolve('src/directives'));
+      .set('plugins', resolve('src/plugins'))
+      .set('config', resolve('src/config'));
     config.module
       .rule('mark')
       .test(/\.js$/)
@@ -74,7 +76,7 @@ module.exports = {
   configureWebpack: (config) => {
     const plugins = [];
 
-    if (process.env.NODE_ENV !== 'development') {
+    if (process.env.NODE_ENV === 'production') {
       // 去掉不用的css 多余的css
       plugins.push(
         new PurgecssPlugin({

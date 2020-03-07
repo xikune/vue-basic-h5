@@ -1,8 +1,9 @@
 <template>
   <div class="home">
     <img alt="Vue logo"
-         src="../assets/logo.png">
-    <div><input type="text"
+         src="assets/logo.png">
+    <!-- <div>
+      <input type="text"
              v-both:dd="inputValue"
              placeholder="请输入"></div>
     <div>
@@ -17,7 +18,7 @@
     </div>
     <div><input type="text"
              :value="getValue()"
-             placeholder="请输入"></div>
+             placeholder="请输入"></div> -->
   </div>
 </template>
 

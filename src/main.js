@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import App from './App.vue';
-import router from './router';
-import store from './store';
+import router from 'plugins/router';
+import store from 'plugins/store';
 import vantList from 'lib/vant';
-import directiveList from 'directives'
+import directiveList from 'plugins/directive'
 
 vantList.forEach(vant => (Vue.use(vant)));
 directiveList.forEach(ele => (Vue.directive(ele.name, ele.directive)))
