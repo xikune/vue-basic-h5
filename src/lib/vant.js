@@ -1,5 +1,5 @@
 import {
-  Button,
-} from 'vant';
+  Button
+} from 'vant'
 
-export default [Button];
+export default [Button]

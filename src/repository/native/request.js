@@ -1,29 +1,24 @@
 import AxiosInterceptor from 'config/'
 import axios from 'axios'
 class Ajax extends AxiosInterceptor {
-
-  requestSuccessFunc(requestConfig) {
-
+  requestSuccessFunc (requestConfig) {
     return super.requestSuccessFunc(requestConfig)
   }
 
-  requestFailFunc(requestError) {
-
+  requestFailFunc (requestError) {
     return super.requestFailFunc(requestError)
   }
 
-  responseSuccessFunc(responseConfig) {
-
+  responseSuccessFunc (responseConfig) {
     return super.responseSuccessFunc(responseConfig)
   }
 
-  responseFailFunc(responseError) {
-
+  responseFailFunc (responseError) {
     return super.responseFailFunc(responseError)
   }
 
-  create() {
-    let instance = axios.create()
+  create () {
+    const instance = axios.create()
     // 请求拦截
     instance.interceptors.request(this.requestSuccessFunc, this.requestFailFunc)
     // 响应拦截
@@ -32,11 +27,11 @@ class Ajax extends AxiosInterceptor {
     return instance
   }
 
-  post(url, data, config) {
+  post (url, data, config) {
     this.create().post(url, data, config)
   }
 
-  get(url, config) {
+  get (url, config) {
     this.create().get(url, config)
   }
 }

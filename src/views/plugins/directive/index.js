@@ -1,5 +1,5 @@
-import both from './modules/both';
+import both from './modules/both'
 export default [{
   name: 'both',
-  directive: both,
-}];
+  directive: both
+}]

@@ -23,8 +23,7 @@
 </template>
 
 <script>
-import axios from 'axios';
-
+// import axios from 'axios'
 
 export default {
   name: 'home',
@@ -34,12 +33,11 @@ export default {
     return {
       inputValue: '55'
     }
-
   },
   watch: {
     inputValue (newV) {
-      console.log('inputValue changed', newV);
-    },
+      console.log('inputValue changed', newV)
+    }
   },
   created () {
     // axios.get('/mock/user').then((res) => {
@@ -57,13 +55,12 @@ export default {
       this.inputValue = '666666'
     },
     printInputvalue () {
-      console.log(this.inputValue);
-      console.log(this.v_both_inputValue);
-
+      console.log(this.inputValue)
+      console.log(this.v_both_inputValue)
     },
     getValue () {
       return '111'
     }
   }
-};
+}
 </script>
