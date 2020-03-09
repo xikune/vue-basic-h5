@@ -19,6 +19,6 @@ npm install --registry=https://registry.npm.taobao.org
 npm run serve
 ```
 ## 架构图如下
-<img src="https://raw.githubusercontent.com/FreeDemons/picRepo/master/20200308134426.png" style="zoom: 67%;" />
+<img src="./doc/h5-arch.png" style="zoom: 67%;" />
 
 
