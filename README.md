@@ -25,7 +25,7 @@ npm run serve
 
 ## 主要功能
 
-# 版本发布及工具
+### 版本发布及工具
 
 - [x] 1、doc
 - [x] 2、mock
@@ -41,34 +41,78 @@ npm run serve
 - [ ] 12、cli-plugin-webpack 封装webpack需要的包
 - [ ] 13、cli-plugin-unitest 封装unitest需要的包
 
-# 展现层
+### 展现层
 
 - [ ] 1、统一Loading 封装
 - [ ] 2、异常页面汇总 封装
 - [ ] 3、鉴权 封装
 - [ ] 4、国际化 封装
 
-# 业务核心层
+### 业务核心层
 
 
-# 仓储层
+### 仓储层
 
 - [ ] 1、Axios 底层封装
 - [ ] 2、Native 底层封装
 - [ ] 3、Local 底层封装
 
-# 工具类
+### 工具类
 
 - [ ] 1、日期时间格式化
 - [ ] 2、字符串常用格式化
 - [ ] 3、金额币种格式化
 
-# 监控
+### 监控
 
 - [ ] 1、性能监控
 - [ ] 2、错误监控
 - [ ] 3、行为监控
 - [ ] 4、上报优化
+
+## 编码风格规范
+
+目前使用的是@vue/standard
+
+### 视图层
+
+```text
+1、采用kebab-case命名的：
+
+文件夹
+
+单文件组件
+
+组件在html模板中使用（<my-component></my-component>）
+
+在模板中prop传入属性到子组件（<my-componnet set-text="hello"/>）
+
+所有事件名（this.$emit('api-reload')）
+
+2、采用PascalCase命名：
+
+不允许连续两个以上大写字母
+
+公共基础组件（MfcSelect）
+
+js中components注册组件时（import MyComponent from './my-component.vue'）
+
+组件的name属性（name: 'MyComponent'）
+
+3、采用camelCase 命名：
+
+子组件接收prop属性
+props: {
+    setText: String
+}
+
+```
+
+### 业务核心层
+
+
+### 仓储层
+
 
 ## vscode插件
 
